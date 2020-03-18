@@ -5,4 +5,7 @@ Soy un desarrollador front-end que ama los proyectos tecnológicos y sigo aprend
 Si tiene alguna pregunta o desea saber más sobre mí, contácteme en la sección de contacto de mi portafolio a continuación.
 
 ## Otros trabajos
-* [Bookmarks](https://#/)
+* [Página1](https://#/)
+
+## Otros trabajos
+* [Página2](https://#/)
