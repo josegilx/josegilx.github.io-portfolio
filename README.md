@@ -7,5 +7,4 @@ Si tiene alguna pregunta o desea saber más sobre mí, contácteme en la secció
 ## Otros trabajos
 * [Página1](https://#/)
 
-## Otros trabajos
 * [Página2](https://#/)
