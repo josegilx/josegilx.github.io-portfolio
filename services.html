@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PRIMERO SE CARGAN LOS ARCHIVOS CSS BOOTSTRAP -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- SEGUNDO SE CARGAN LOS ARCHIVOS LOS ESTILOS CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Sistemas || Jose Gil</title>
+</head>
+<body>
+
+
+    <footer class="footerContainer col-12"></footer>
+
+    <!-- Archivos BOOTSTRAP JAVASCRIPT -->
+    <!-- Primero cargar el archivo jquery -->
+    <script src="js/jquery-3.4.1.js"></script>
+        <!-- Segundo cargar el archivo popper -->
+    <script src="js/popper.min.js"></script>
+        <!-- tercero cargar el archivo bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+</body>
+<script>
+    $(document).ready(function () {
+      $('.footerContainer').load('./footer.html');
+    });
+  </script>
+</html>
