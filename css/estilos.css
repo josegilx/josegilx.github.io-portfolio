@@ -1,6 +1,12 @@
 .bg-primary {
   background-color: #ff401c !important; }
 
+.bg-secondary {
+  background-color: #48c07a !important; }
+
+.bg- {
+  background-color: #ff401c !important; }
+
 .text-primary {
   color: #ff401c !important; }
 
@@ -24,15 +30,154 @@ html {
   font-size: 13px; }
 
 body {
-  color: #44484a;
+  color: #050505;
   font-family: 'Open Sans', sans-serif; }
 
 .card:hover {
   -webkit-box-shadow: 0 0 10px #0c0c0c3b;
           box-shadow: 0 0 10px #0c0c0c3b; }
 
+hr {
+  border-top: 1px solid #4bceb4;
+  height: 0px;
+  text-align: center;
+  margin-top: 0;
+  min-width: 15rem; }
+
+#my-skills {
+  background-color: rgba(231, 235, 239, 0.35); }
+  #my-skills .icon-tech-skill {
+    display: inline-block;
+    height: 6em;
+    width: 6em;
+    margin: .8em .8em 1em;
+    position: relative; }
+    #my-skills .icon-tech-skill img {
+      -webkit-box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.19);
+              box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.19);
+      height: 100%;
+      width: 100%; }
+    #my-skills .icon-tech-skill p {
+      color: #050505;
+      display: contents;
+      text-transform: capitalize;
+      font-weight: bold;
+      position: absolute; }
+    #my-skills .icon-tech-skill figcaption {
+      background-color: rgba(0, 0, 0, 0.32);
+      color: #fff;
+      font-size: .9rem;
+      font-weight: 100;
+      height: 100%;
+      text-align: center;
+      top: 0;
+      -webkit-transition: all .20s ease;
+      transition: all .20s ease;
+      opacity: 0;
+      position: absolute;
+      visibility: hidden;
+      width: 100%; }
+  #my-skills .icon-tech-skill:hover > figcaption {
+    font-weight: 500;
+    opacity: 5;
+    visibility: visible;
+    width: 100%; }
+  #my-skills .icon-tech-skill:hover > p {
+    visibility: hidden; }
+  #my-skills .tech-skills-box p {
+    color: #050505;
+    display: contents;
+    text-transform: capitalize;
+    font-weight: bold;
+    position: absolute; }
+
+.skill-bars li {
+  margin-bottom: .8rem; }
+
+#my-contact-info {
+  background-color: rgba(231, 235, 239, 0.35);
+  padding: 2em 0; }
+  #my-contact-info .container-contact-title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  #my-contact-info .container-info-contact {
+    padding: 1em;
+    border-radius: 2px;
+    border-right: 1px solid #4bceb4;
+    border-left: 1px solid #4bceb4; }
+    #my-contact-info .container-info-contact .container-red-soc {
+      margin: 1em 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; }
+      #my-contact-info .container-info-contact .container-red-soc div {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 4em;
+        padding: 1em;
+        width: 4em; }
+      #my-contact-info .container-info-contact .container-red-soc .github-icon {
+        border: 2px solid #808080; }
+        #my-contact-info .container-info-contact .container-red-soc .github-icon i {
+          color: #808080; }
+      #my-contact-info .container-info-contact .container-red-soc .linkedin-icon {
+        border: 2px solid #01b8f4; }
+        #my-contact-info .container-info-contact .container-red-soc .linkedin-icon i {
+          color: #01b8f4; }
+      #my-contact-info .container-info-contact .container-red-soc .cv-icon {
+        border: 2px solid #a364bd;
+        padding: 1.2em; }
+        #my-contact-info .container-info-contact .container-red-soc .cv-icon i {
+          color: #a364bd; }
+    #my-contact-info .container-info-contact .container-red-soc div:hover {
+      height: 5em;
+      width: 5em;
+      -webkit-transition: all .30s ease;
+      transition: all .30s ease; }
+
+#made-by {
+  margin: 0px;
+  padding: 0px;
+  background: rgba(52, 58, 64, 0.96);
+  /* background: #343a40!important; */
+  color: #ffffff;
+  text-decoration: none; }
+  #made-by .footer-made-by {
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px; }
+
 @media (min-width: 768px) {
   html {
     font-size: 16px; } }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #my-skills .icon-tech-skill {
+    margin: 0.8em 2em 2em;
+    height: 6.5em;
+    width: 6.5em; } }
 
 /*# sourceMappingURL=estilos.css.map */
