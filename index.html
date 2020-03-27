@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
     <!-- FUENTES DE GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Fuentes de font Awesome (iconos)-->
@@ -19,33 +21,41 @@
 </head>
 
 <body>
+
     <!-- Nav tabs -->
     <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
         <div class="container">
-            <!-- <a href="#" class="navbar-brand">
+            <!-- < href="#" class="navbar-brand">
             <img src="" alt="" width="150" height="auto"> -->
-            <a href="#" class="navbar-brand">
+            <a class="navbar-brand" href="#!">
                 <strong>José Alejandro</strong> Gil
             </a>
 
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal"
-                aria-expanded="false" aria-controls="menu-principal" aria-label="Desplegar menú de navegación">
+            <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse"
+                data-target="#menu-principal" aria-expanded="false" aria-controls="menu-principal"
+                aria-label="Desplegar menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="menu-principal">
-                <ul class="navbar-nav ml-auto">
-                    <a class="nav-item">
+            <div id="menu-principal" class="collapse navbar-collapse float-lg-right text-center">
+                <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+                    <li class="nav-item active">
                         <a href="#" class="nav-link active">Inicio</a>
-                    </a>
-                    <li class="nav-item">
-                        <a href="#quien-soy" class="nav-link">¿Quien soy?</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#filosofia" class="nav-link">Filosofía</a>
+                        <a href="#quien-soy" class="nav-link">¿Quién soy?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experiencia" class="nav-link">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#my-skills" class="nav-link">Habilidades</a>
                     </li>
                     <li class="nav-item">
                         <a href="#proyectos" class="nav-link">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#my-contact-info" class="nav-link">Contáctame</a>
                     </li>
                 </ul>
             </div>
@@ -53,57 +63,152 @@
     </nav>
 
     <!-- Tab panes (Quien soy)-->
-    <section id="quien-soy" class="quien-soy py-4 mt-5">
+    <section id="quien-soy" class="quien-soy py-5 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 text-center">
-                    <img src="images/desarrollador.svg" alt="Soy el desarrollador" class="img-fluid mb-4 mb-md-0">
+                    <img src="images/desarrollador.jpg" alt="Soy el desarrollador" class="img-fluid mb-4 mb-md-0">
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-left align-self-md-center">
-                    <h1 class="display-4 font-weight-bold text-primary">¿Quien soy?</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum facere harum quae tempore
-                        consequuntur nihil amet! Ullam dolorum, perspiciatis ex alias iste, consectetur deserunt
-                        expedita velit corrupti possimus, optio voluptas.</p>
-                    <a href="#" class="btn btn-primary btn-lg">Leér más</a>
+                    <h3 class="display-4 font-weight-bold text-primary mb-3">¿Quien soy?</h3>
+                    <p>Ingeniero de Sistemas con más de 7 años de experiencia en el ámbito informático como:
+                        Desarrollador
+                        Junior, Analista de sistemas / Analista Funcional, Soporte técnico, Consultor técnico.</p>
+                    </p> Actualmente estoy en busca de desafíos en el Diseño de Software y orientar mi carrera
+                    profesional
+                    para poder continuar aprendiendo nuevas metodologías como aplicando mis conocimientos
+                    actuales en paralelo a mi experiencia, por lo que de forma proactiva me he dedicado a ampliar mis
+                    conocimientos a través de certificaciones y cursos.
+                    </p>
+                    <a href="#" class="btn btn-primary btn-lg mt-4" data-toggle="modal" data-target="#leer-mas">Leér
+                        más</a>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="leer-mas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">¿Quien soy?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Ingeniero de Sistemas con más de 7 años de experiencia en el ámbito informático
+                            (Desarrollador
+                            Junior, Analista de sistemas / Analista Funcional, Soporte técnico, Consultor técnico) con
+                            experiencia en diferentes lenguajes de programación: JAVA EE, HTML5, CCS, Bootstrap,
+                            complementado con el manejo de sistemas de gestión de bases de datos MySQL/SQL Server.
+                            Diseño, desarrollo, testing, documentación y mantenimiento de sistemas informáticos.
+                            Metodologías ágiles de desarrollo de software: RUP, con experiencia en la asignación de
+                            tareas
+                            apoyada en herramientas Trello y Bitrix. Adicional a esto, con habilidades en optimización
+                            de
+                            procesos informáticos y en servicios de atención al cliente en desarrollo, implantación y
+                            configuración de sistemas de información en PYMES. </p>
+                        <p>Con destreza en habilidades blandas,
+                            comunicativo, analítico, responsable, dedicado y con habilidades interpersonales en el
+                            trabajo en
+                            equipo y usuarios. Dispuesto a aprender, crecer profesionalmente y apoyar a la organización
+                            en la
+                            mejora constante.</p>
+                        <p>Actualmente estoy en busca de desafíos en el Diseño de Software y orientar mi carrera
+                            profesional
+                            para poder continuar aprendiendo nuevas metodologías como aplicando mis conocimientos
+                            actuales en paralelo a mi experiencia, por lo que de forma proactiva me he dedicado a
+                            ampliar mis
+                            conocimientos a través de certificaciones y cursos.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
+                        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Tab panes (Filosofía)-->
-    <section id="filosofia" class="filosofia py-4 bg-primary text-center text-white">
+
+    <!-- Tab panes (Experiencia)-->
+    <section id="experiencia" class="experiencia py-5 mt-3">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <img src="images/avatar.png" alt="Avatar José Aleandro Gil" width="260" height="auto"
-                        class="img-fluid rounded-circle mb-4">
-                    <p class="h2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laudantium sunt
-                        culpa temporibus cupiditate dolorem adipisci assumenda eius libero. Corporis commodi laborum
-                        eius ipsum harum ipsa quia, corrupti ipsam minus doloribus voluptatem atque ut mollitia
-                        consequuntur ex et natus repellendus.</p>
-                    <p class="h4 font-italic">- Tomas Mendez</p>
 
+                <div class="col-12 d-flex flex-column text-center col-md-6 text-md-center">
+                    <h1 class="display-4 font-weight-bold text-secundary">Experiencia Laboral</h1>
+                    <hr>
+
+                    <p class="h4 font-italic text-justify mt-2">Consultor TI y Desarrollador / Enseca Technology C.A -
+                        Venezuela</p>
+                    <p class="font-weight-bold text-justify">OCTUBRE DE 2012 – SEPTIEMBRE DE 2019</p>
+                    <p class="text-justify">Tareas realizadas:
+                        Consultoría y desarrollo de Sistemas bajo los lenguajes Java, Framework Laravel, con integración
+                        con base de datos en SQL server 2008, 2012 y ACCESS para el mantenimiento y mejoras de
+                        aplicaciones de control de acceso y equipos biométricos comercializados por la empresa.
+                        Análisis, diagramación y documentación en Bizagi, StarUML, Lucidchart, Microsoft Visio,
+                        Microsoft
+                        Project.
+                        Análisis de sistemas y soporte a las aplicaciones administrativas y servidores en Windows Server
+                        llevando a cabo mediante la administración del dominio y acceso de usuarios a las aplicaciones.</p>
+
+                    <p class="h4 font-italic text-justify mt-2">Help Desk Support Specialist / Eol.com - Venezuela</p>
+                    <p class="font-weight-bold text-justify">FEBRERO DE 2010 – SEPTIEMBRE DE 2012
+                    </p>
+                    <p class="text-justify">Tareas realizadas:
+                        Me desempeñé como soporte técnico a equipos de computación de la empresa, en mantención de
+                        servidores Windows Server 2008 y 2012, Bases de datos Mysql, primera línea de soporte de
+                        aplicaciones y trabajo en conjunto con desarrolladores, QA de aplicaciones en servidores
+                        virtuales
+                        a través de VirtualBox, VMWare y Hyper-V. Encargado de pasos a producción de mejoras y
+                        soluciones de la plataforma de trabajo de la compañía de forma ordenada y coordinada.</p>
                 </div>
+
+                <div class="col-12 col-md-6 text-center my-4">
+                    <img src="images/avatar.svg" alt="Avatar José Aleandro Gil" width="260" height="auto"
+                        class="img-fluid rounded-circle mt-md-5">
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- Tab panes (Skill - Competencias)-->
-
-    <section id="my-skills" class="my-skills py-4 text-center">
+    <section id="my-skills" class="my-skills text-center py-5">
         <div class="container">
             <div class="row text-md-center">
 
-                <div class="info-tech-skills d-flex flex-column col-12 pb-4">
-                    <h3 class="display-4 font-weight-bold text-primary">habilidad tecnológica</h3>
+                <div class="info-tech-skills col-12 d-flex flex-column pb-4">
+
+                    <h1 class="display-4 font-weight-bold text-primary">habilidad tecnológica</h1>
                     <hr>
                 </div>
 
                 <div class="tech-skills-box col-sm-6">
 
                     <figure class="icon-tech-skill">
-                        <img src="images/git.png" class="img-responsive" alt="git">
-                        <p>git</p>
-                        <figcaption>Software de control de versiones</figcaption>
+                        <img src="images/html5-css3.png" class="img-responsive" alt="html5-css3">
+                        <p>html5 - css3</p>
+                        <figcaption>Semántica y Estilo para el deseño Web</figcaption>
+                    </figure>
+
+                    <figure class="icon-tech-skill">
+                        <img src="images/bootstrap.png" class="img-responsive" alt="bootstrap">
+                        <p>bootstrap 4</p>
+                        <figcaption>Framework de CSS, HTML y JavaScript</figcaption>
+                    </figure>
+
+                    <figure class="icon-tech-skill">
+                        <img src="images/java.jpg" class="img-responsive" alt="java">
+                        <p>java</p>
+                        <figcaption>Lenguaje de programación</figcaption>
+                    </figure>
+
+                    <figure class="icon-tech-skill">
+                        <img src="images/php.png" class="img-responsive" alt="php">
+                        <p>php</p>
+                        <figcaption>Lenguaje de programación</figcaption>
                     </figure>
 
                     <figure class="icon-tech-skill">
@@ -113,38 +218,32 @@
                     </figure>
 
                     <figure class="icon-tech-skill">
-                        <img src="images/git.png" class="img-responsive" alt="git">
-                        <p>git</p>
-                        <figcaption>Software de control de versiones</figcaption>
+                        <img src="images/mysql.png" class="img-responsive" alt="mysql">
+                        <p>mysql</p>
+                        <figcaption>Gestor de Bases de Datos</figcaption>
                     </figure>
 
                     <figure class="icon-tech-skill">
-                        <img src="images/git.png" class="img-responsive" alt="git">
-                        <p>git</p>
-                        <figcaption>Software de control de versiones</figcaption>
-                    </figure>
-
-                    <figure class="icon-tech-skill">
-                        <img src="images/proyecto1.png" class="img-responsive" alt="git">
-                        <p>git</p>
-                        <figcaption>Software de control de versiones</figcaption>
+                        <img src="images/sql-server.png" class="img-responsive" alt="git">
+                        <p>sql server</p>
+                        <figcaption>Gestor de Bases de Datos</figcaption>
                     </figure>
 
                 </div>
-
+                <!-- id="tech-skills-box" -->
                 <div class="tech-skills-box col-sm-6 text-left">
                     <ul class="skill-bars my-3">
                         <li>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                <div class="progress-bar progress-bar-striped progress-bar-animated"
                                     role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
                                     style="width: 90%"><span>90%</span></div>
                             </div>
-                            <p>html 5</p>
+                            <p>html5 - css3</p>
                         </li>
                         <li>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                <div class="progress-bar progress-bar-striped progress-bar-animated"
                                     role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
                                     style="width: 85%"><span>85%</span></div>
                             </div>
@@ -152,126 +251,133 @@
                         </li>
                         <li>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                <div class="progress-bar progress-bar-striped progress-bar-animated"
                                     role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
                                     style="width: 70%"><span>70%</span></div>
                             </div>
-                            <p>CSS</p>
+                            <p>git</p>
                         </li>
                         <li>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                <div class="progress-bar progress-bar-striped progress-bar-animated"
                                     role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
                                     style="width: 50%"><span>50%</span></div>
                             </div>
-                            <p>Java</p>
+                            <p>java</p>
                         </li>
                         <li>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                <div class="progress-bar progress-bar-striped progress-bar-animated"
                                     role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                    style="width: 40%"><span>40%</span></div>
+                                    style="width: 30%"><span>30%</span></div>
                             </div>
-                            <p>PHP</p>
+                            <p>php</p>
                         </li>
                         <li>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                <div class="progress-bar progress-bar-striped progress-bar-animated"
                                     role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                    style="width: 10%"><span>10%</span></div>
+                                    style="width: 70%"><span>70%</span></div>
                             </div>
-                            <p>Java script</p>
+                            <p>sql server</p>
                         </li>
                         <li>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                <div class="progress-bar progress-bar-striped progress-bar-animated"
                                     role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                    style="width: 10%"><span>10%</span></div>
+                                    style="width: 70%"><span>70%</span></div>
                             </div>
-                            <p>JQuery</p>
+                            <p>mysql</p>
                         </li>
                     </ul>
                 </div>
 
             </div>
-    </section><!-- /end skill-bars -->
-
-
+        </div>
+    </section>
 
     <!-- Tab panes (Proyectos)-->
-    <section id="proyectos" class="proyectos py-4">
+    <section id="proyectos" class="proyectos py-5">
         <div class="container">
-            <!-- <div class="row text-md-center"> -->
-            <h1 class="display-4 font-weight-bold text-center pb-4">Mis Proyectos</h1>
-            <hr>
-        <!-- </div> quede aqui -->
             <div class="row text-md-center">
-                <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-                    <div class="card">
-                        <img src="images/proyecto1.png" class="card-img-top h-100" alt="proyecto1">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto11</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Ver Proyecto</a>
+
+                <div class="container-proyectos d-flex flex-column col-12 pb-4">
+                    <h3 class="display-4 font-weight-bold text-center text-primary">Mis Proyectos</h3>
+                    <hr>
+                </div>
+                <div class="row text-md-center">
+                    <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="card">
+                            <img src="images/proyecto1.png" class="card-img-top h-100" alt="proyecto1">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto11</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
+                                    bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-                    <div class="card">
-                        <img src="images/proyecto2.png" class="card-img-top h-100" alt="proyecto2">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto22</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="card">
+                            <img src="images/proyecto2.png" class="card-img-top h-100" alt="proyecto2">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto22</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
+                                    bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-                    <div class="card">
-                        <img src="images/proyecto3.png" class="card-img-top h-100" alt="proyecto3">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto33</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="card">
+                            <img src="images/proyecto3.png" class="card-img-top h-100" alt="proyecto3">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto33</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
+                                    bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-                    <div class="card">
-                        <img src="images/proyecto4.png" class="card-img-top h-100" alt="proyecto4">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto44</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="card">
+                            <img src="images/proyecto4.png" class="card-img-top h-100" alt="proyecto4">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto44</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
+                                    bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Tab panes (Infor-Contact) -->
-    <section id="my-contact-info">
+    <section id="my-contact-info" class="my-contact-info py-5 mt-3">
         <div class="container">
             <div class="row">
                 <div class="col-12">
 
-                    <div class="container-contact-title">
-                        <h2 class="display-4 font-weight-bold text-primary">contáctame</h2>
+                    <div class="container-contact-title d-flex flex-column col-12 pb-4">
+                        <h3 class="display-4 font-weight-bold text-primary">contáctame</h3>
                         <hr>
                     </div>
                     <div class="container-info-contact">
                         <div class="container-red-soc">
                             <div class="github-icon"><a href="https://github.com/josegilx" target="_blank">
-                                    <i class="fab fa-github-alt fa-2x"></i>
+                                    <!-- <i class="fab fa-github-alt fa-2x"></i> -->
+                                    <i class="fas fa-code-branch fa-2x"></i>
                                 </a></div>
                             <div class="linkedin-icon"><a href="https://www.linkedin.com/in/josegilx/" target="_blank">
                                     <i class="fab fa-linkedin fa-2x"></i>
@@ -287,7 +393,7 @@
     </section>
 
     <!-- Footer -->
-    <footer id="made-by">
+    <footer id="made-by" class="made-by py-2">
         <div class="container">
             <div class="row">
                 <div class="col-12">
