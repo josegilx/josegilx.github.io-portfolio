@@ -86,6 +86,10 @@ hr {
 .card:hover {
   -webkit-box-shadow: 0 0 10px #0c0c0c3b;
           box-shadow: 0 0 10px #0c0c0c3b; }
+.card-text{
+  height: 100px;
+  overflow: auto;
+}
 
 .experiencia {
   background-color: #019e7c;
